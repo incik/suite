@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@craftjs/core": "^0.2.0-beta.4",
+    "@material-ui/core": "^4.12.4",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
@@ -10,7 +12,9 @@
     "@types/node": "^16.7.13",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "material-ui-color-picker": "^3.5.1",
     "react": "^18.1.0",
+    "react-contenteditable": "^3.3.6",
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
     "typescript": "^4.4.2",
