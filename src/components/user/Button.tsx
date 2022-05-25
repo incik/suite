@@ -1,3 +1,4 @@
+import { useNode } from "@craftjs/core";
 import { Button as MaterialButton, Color } from "@material-ui/core";
 
 export type ButtonProps = {
@@ -8,8 +9,17 @@ export type ButtonProps = {
 };
 
 export const Button = ({ size, variant, color, children }: any) => {
+  const {
+    connectors: { connect, drag },
+  } = useNode();
+
   return (
-    <MaterialButton size={size} variant={variant} color={color}>
+    <MaterialButton
+      ref={(ref: any) => connect(drag(ref))}
+      size={size}
+      variant={variant}
+      color={color}
+    >
       {children}
     </MaterialButton>
   );
