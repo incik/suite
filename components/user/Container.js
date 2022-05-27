@@ -8,7 +8,7 @@ export const Container = ({ children, ...props }) => {
 
   return (
     <div
-      className="p-4 bg-orange-300 outline-1 outline-dashed outline-red-700"
+      className="p-4 outline-1 outline-dashed outline-red-700"
       {...props}
       ref={(ref) => connect(drag(ref))}
     >

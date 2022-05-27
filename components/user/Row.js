@@ -1,47 +1,35 @@
-import { useNode } from "@craftjs/core";
+import { Element, useNode } from "@craftjs/core";
 import { Container } from "./Container";
-import { Text } from "./Text";
+import { Column } from "./Column";
 
-const RowContent = ({ children }) => {
-  return <div>{children}</div>;
-};
-
-export const CardTop = ({ children, ...props }) => {
+export const RowContent = ({ children, ...props }) => {
   const {
     connectors: { connect },
   } = useNode();
   return (
-    <div
-      {...props}
-      ref={connect}
-      className="text-only"
-      style={{
-        padding: "10px",
-        marginBottom: "10px",
-        borderBottom: "1px solid #eee",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "flex-start",
-      }}
-    >
-      {children}
+    <div {...props} ref={connect} className="flex flex-col">
+      {children ? (
+        children
+      ) : (
+        <div className="p-4 italic text-gray-600 bg-green-300">Empty row</div>
+      )}
     </div>
   );
 };
 
-CardTop.craft = {
+RowContent.craft = {
   rules: {
-    canMoveIn: (incomingNodes) =>
-      incomingNodes.every((incomingNode) => incomingNode.data.type === Text),
+    /* canMoveIn: (incomingNodes) =>
+      incomingNodes.every((incomingNode) =>
+        [Row, Column].includes(incomingNode.data.type)
+      ), */
   },
 };
 
 export const Row = ({ children }) => {
   return (
-    <Container className="bg-blue-600 p-4 mb-1">
-      <Element id="content" is={CardTop} canvas>
-        <Text text="Karel" />
-      </Element>
+    <Container className=" outline-dashed outline-1 outline-green-600">
+      <Element is={RowContent} id="rowcontent" canvas />
     </Container>
   );
 };

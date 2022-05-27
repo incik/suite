@@ -5,7 +5,8 @@ import { Editor, Element, Frame } from "@craftjs/core";
 import { Button } from "../components/user/Button";
 import { Card, CardBottom, CardTop } from "../components/user/Card";
 
-import { Row } from "../components/user/Row";
+import { Column, ColumnContent } from "../components/user/Column";
+import { Row, RowContent } from "../components/user/Row";
 import { Text } from "../components/user/Text";
 import { ProductCard } from "../components/user/ProductCard";
 import { Container } from "../components/user/Container";
@@ -26,6 +27,9 @@ export default function Home() {
               Card,
               CardTop,
               CardBottom,
+              RowContent,
+              Column,
+              ColumnContent,
             }}
           >
             <div className="col-span-1 bg-slate-500">

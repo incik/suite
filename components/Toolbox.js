@@ -6,6 +6,7 @@ import {
   PencilIcon,
 } from "@heroicons/react/outline";
 import { Card } from "./user/Card";
+import { Column } from "./user/Column";
 import { ProductCard } from "./user/ProductCard";
 import { Row } from "./user/Row";
 import { Text } from "./user/Text";
@@ -44,7 +45,7 @@ export const Toolbox = () => {
 
       <div
         className="flex flex-col shadow-md rounded items-center p-2 bg-slate-400 mb-4"
-        ref={(ref) => connectors.create(ref, <ProductCard />)}
+        ref={(ref) => connectors.create(ref, <Column />)}
       >
         <ViewBoardsIcon className="text-white w-5 h-5" />
         <span className="text-white">Column</span>
