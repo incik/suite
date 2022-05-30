@@ -7,12 +7,14 @@ export const Container = ({ children, ...props }) => {
   } = useNode();
 
   return (
-    <div
-      className="p-4 outline-1 outline-dashed outline-red-700"
-      {...props}
-      ref={(ref) => connect(drag(ref))}
-    >
-      {children}
+    <div className="" {...props} ref={(ref) => connect(drag(ref))}>
+      {children ? (
+        children
+      ) : (
+        <div className="text-center italic p-4 bg-yellow-100 outline-1 outline-dashed outline-amber-400">
+          Empty container
+        </div>
+      )}
     </div>
   );
 };

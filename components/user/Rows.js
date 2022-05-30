@@ -1,6 +1,5 @@
 import { Element, useNode } from "@craftjs/core";
 import { Container } from "./Container";
-import { Column } from "./Column";
 
 export const RowContent = ({ children, ...props }) => {
   const {
@@ -17,19 +16,12 @@ export const RowContent = ({ children, ...props }) => {
   );
 };
 
-RowContent.craft = {
-  rules: {
-    /* canMoveIn: (incomingNodes) =>
-      incomingNodes.every((incomingNode) =>
-        [Row, Column].includes(incomingNode.data.type)
-      ), */
-  },
-};
-
-export const Row = ({ children }) => {
+export const Rows = ({ numberOfRows = 2, children }) => {
   return (
     <Container className=" outline-dashed outline-1 outline-green-600">
-      <Element is={RowContent} id="rowcontent" canvas />
+      {[...Array(numberOfRows).keys()].map((id) => (
+        <Element is={RowContent} id={`row-${id}`} canvas />
+      ))}
     </Container>
   );
 };

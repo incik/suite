@@ -11,8 +11,10 @@
   "dependencies": {
     "@craftjs/core": "^0.2.0-beta.4",
     "@heroicons/react": "^1.0.6",
+    "axios": "^0.27.2",
     "next": "12.1.6",
     "react": "17",
+    "react-contenteditable": "^3.3.6",
     "react-dom": "17"
   },
   "devDependencies": {

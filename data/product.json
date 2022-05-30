@@ -1,0 +1,438 @@
+{
+  "data": {
+    "product": {
+      "id": 58,
+      "hasVariants": true,
+      "name": "Baleríny modré s puntíky",
+      "shortDescription": "<p>Dásmské baleríny Glam, ve stylově modré barvě s bílými puntíky. Buďte hvězdou letošního léta.</p>",
+      "description": "<p>Trendem tohoto jara a léta jsou puntíkaté balerínky v retro stylu! Tento model je stylový, perfektně přilne k noze a Vy si užijete originální pojetí klasických balerínek. Spojení pohodlí a výjimečného stylu v jediných botách!</p>\n<p>Výrobce: Glam<br />Barva: modrá<br />Druh podpatku: bez podpatku<br />Druh špičky: plná<br />Typ zapínání: nazouvací<br />Materiál: eko kůže<br />Sezóna: jaro/léto<br />Vložka: eko kůže<br />Příležitost: na každý den<br />Styl: casual<br />Zápatí: plné, měkké<br />Podrážka: z umělé hmoty, hladká</p>\n<div class=\"producer\"> </div>",
+      "brand": {
+        "name": "Paul Green",
+        "id": 4,
+        "url": "/znacka/paul-green/",
+        "web": null,
+        "indexName": "paul-green",
+        "description": null,
+        "shortDescription": null
+      },
+      "warrantyName": "2 roky",
+      "url": "/boty-a-tapky/baleriny-modre-s-puntiky/",
+      "isDeletable": true,
+      "isOrderable": true,
+      "relatedProducts": {
+        "count": 1,
+        "lowestPrice": 850.0,
+        "productsVariantId": [19]
+      },
+      "rating": {
+        "averageScore": 2.8999999999999999,
+        "totalVotes": 18,
+        "star1": 5,
+        "star2": 2,
+        "star3": 4,
+        "star4": 4,
+        "star5": 3
+      },
+      "flagCodes": ["tip"],
+      "variants": [
+        {
+          "id": 1575,
+          "code": "58/38",
+          "name": "Velikost: 38",
+          "isStockAvailable": true,
+          "price": {
+            "price": 948.0,
+            "priceWithoutVat": 783.47000000000003,
+            "standardPrice": 200.0,
+            "customerPrice": 948.0,
+            "customerPriceWithoutVat": 783.47000000000003,
+            "priceToStandardDiscountPercentage": 0.0
+          },
+          "amount": {
+            "minOrderableAmount": 1.0,
+            "maxOrderableAmount": 9999.0,
+            "decimalCount": 0,
+            "unitName": "ks"
+          },
+          "availability": {
+            "amount": 1.0,
+            "availabilityId": -4,
+            "isAmountAvailable": true,
+            "availabilityColor": null,
+            "name": "Objednáno",
+            "displayStockAmountByDeliveryPoints": false,
+            "frontendStockAmount": "-5",
+            "stockAmount": -5.0,
+            "displayFrontendStockAmounts": true,
+            "deliveryDateTime": null,
+            "unavailabilityMessages": null,
+            "unavailabilityMessage": null
+          },
+          "image": {
+            "id": null,
+            "description": null,
+            "code": "detail",
+            "name": null,
+            "seoName": null,
+            "cdnName": null
+          },
+          "weight": 0.20000000000000001,
+          "width": null,
+          "variantParameters": [
+            {
+              "name": "Velikost",
+              "description": null,
+              "parametricFilterCode": "pv5",
+              "values": [
+                {
+                  "name": "38",
+                  "parametricFilterValue": "8"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 1578,
+          "code": "58/39",
+          "name": "Velikost: 39",
+          "isStockAvailable": true,
+          "price": {
+            "price": 948.0,
+            "priceWithoutVat": 783.47000000000003,
+            "standardPrice": 948.0,
+            "customerPrice": 948.0,
+            "customerPriceWithoutVat": 783.47000000000003,
+            "priceToStandardDiscountPercentage": 0.0
+          },
+          "amount": {
+            "minOrderableAmount": 1.0,
+            "maxOrderableAmount": 9999.0,
+            "decimalCount": 0,
+            "unitName": "ks"
+          },
+          "availability": {
+            "amount": 1.0,
+            "availabilityId": 1,
+            "isAmountAvailable": true,
+            "availabilityColor": null,
+            "name": "Doručení do 24 hodin",
+            "displayStockAmountByDeliveryPoints": false,
+            "frontendStockAmount": "0",
+            "stockAmount": 0.0,
+            "displayFrontendStockAmounts": true,
+            "deliveryDateTime": null,
+            "unavailabilityMessages": null,
+            "unavailabilityMessage": null
+          },
+          "image": {
+            "id": null,
+            "description": null,
+            "code": "detail",
+            "name": null,
+            "seoName": null,
+            "cdnName": null
+          },
+          "weight": 0.20000000000000001,
+          "width": null,
+          "variantParameters": [
+            {
+              "name": "Velikost",
+              "description": null,
+              "parametricFilterCode": "pv5",
+              "values": [
+                {
+                  "name": "39",
+                  "parametricFilterValue": "9"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 1581,
+          "code": "58/40",
+          "name": "Velikost: 40",
+          "isStockAvailable": true,
+          "price": {
+            "price": 948.0,
+            "priceWithoutVat": 783.47000000000003,
+            "standardPrice": 948.0,
+            "customerPrice": 948.0,
+            "customerPriceWithoutVat": 783.47000000000003,
+            "priceToStandardDiscountPercentage": 0.0
+          },
+          "amount": {
+            "minOrderableAmount": 1.0,
+            "maxOrderableAmount": 9999.0,
+            "decimalCount": 0,
+            "unitName": "ks"
+          },
+          "availability": {
+            "amount": 1.0,
+            "availabilityId": -1,
+            "isAmountAvailable": true,
+            "availabilityColor": "#009901",
+            "name": "Skladem",
+            "displayStockAmountByDeliveryPoints": true,
+            "frontendStockAmount": "1",
+            "stockAmount": 1.0,
+            "displayFrontendStockAmounts": true,
+            "deliveryDateTime": "2022-06-01T14:30:00+02:00",
+            "unavailabilityMessages": null,
+            "unavailabilityMessage": null
+          },
+          "image": {
+            "id": null,
+            "description": null,
+            "code": "detail",
+            "name": null,
+            "seoName": null,
+            "cdnName": null
+          },
+          "weight": 0.20000000000000001,
+          "width": null,
+          "variantParameters": [
+            {
+              "name": "Velikost",
+              "description": null,
+              "parametricFilterCode": "pv5",
+              "values": [
+                {
+                  "name": "40",
+                  "parametricFilterValue": "10"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 1584,
+          "code": "58/41",
+          "name": "Velikost: 41",
+          "isStockAvailable": true,
+          "price": {
+            "price": 948.0,
+            "priceWithoutVat": 783.47000000000003,
+            "standardPrice": 948.0,
+            "customerPrice": 948.0,
+            "customerPriceWithoutVat": 783.47000000000003,
+            "priceToStandardDiscountPercentage": 0.0
+          },
+          "amount": {
+            "minOrderableAmount": 1.0,
+            "maxOrderableAmount": 9999.0,
+            "decimalCount": 0,
+            "unitName": "ks"
+          },
+          "availability": {
+            "amount": 1.0,
+            "availabilityId": -1,
+            "isAmountAvailable": true,
+            "availabilityColor": "#009901",
+            "name": "Skladem",
+            "displayStockAmountByDeliveryPoints": true,
+            "frontendStockAmount": "2",
+            "stockAmount": 2.0,
+            "displayFrontendStockAmounts": true,
+            "deliveryDateTime": "2022-06-01T14:30:00+02:00",
+            "unavailabilityMessages": null,
+            "unavailabilityMessage": null
+          },
+          "image": {
+            "id": null,
+            "description": null,
+            "code": "detail",
+            "name": null,
+            "seoName": null,
+            "cdnName": null
+          },
+          "weight": 0.20000000000000001,
+          "width": null,
+          "variantParameters": [
+            {
+              "name": "Velikost",
+              "description": null,
+              "parametricFilterCode": "pv5",
+              "values": [
+                {
+                  "name": "41",
+                  "parametricFilterValue": "11"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 1629,
+          "code": "58/42",
+          "name": "Velikost: 42",
+          "isStockAvailable": true,
+          "price": {
+            "price": 948.0,
+            "priceWithoutVat": 783.47000000000003,
+            "standardPrice": 948.0,
+            "customerPrice": 948.0,
+            "customerPriceWithoutVat": 783.47000000000003,
+            "priceToStandardDiscountPercentage": 0.0
+          },
+          "amount": {
+            "minOrderableAmount": 1.0,
+            "maxOrderableAmount": 9999.0,
+            "decimalCount": 0,
+            "unitName": "ks"
+          },
+          "availability": {
+            "amount": 1.0,
+            "availabilityId": -1,
+            "isAmountAvailable": true,
+            "availabilityColor": "#009901",
+            "name": "Skladem",
+            "displayStockAmountByDeliveryPoints": true,
+            "frontendStockAmount": "2",
+            "stockAmount": 2.0,
+            "displayFrontendStockAmounts": true,
+            "deliveryDateTime": "2022-06-01T14:30:00+02:00",
+            "unavailabilityMessages": null,
+            "unavailabilityMessage": null
+          },
+          "image": {
+            "id": null,
+            "description": null,
+            "code": "detail",
+            "name": null,
+            "seoName": null,
+            "cdnName": null
+          },
+          "weight": 0.20000000000000001,
+          "width": null,
+          "variantParameters": [
+            {
+              "name": "Velikost",
+              "description": null,
+              "parametricFilterCode": "pv5",
+              "values": [
+                {
+                  "name": "42",
+                  "parametricFilterValue": "12"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "id": 318,
+          "description": "Baleríny modré s puntíky (Velikost 42)",
+          "code": "detail",
+          "name": "58-1.jpg",
+          "seoName": "58-1_baleriny-modre-s-puntiky--velikost-42.jpg",
+          "cdnName": "58-1_baleriny-modre-s-puntiky--velikost-42.jpg?59393c3a"
+        }
+      ],
+      "defaultCategoryId": 876,
+      "categoryIds": [876],
+      "filteringParameters": [],
+      "descriptiveParameters": [],
+      "seo": {
+        "metaTitle": "Baleríny modré s puntíky - Fénix",
+        "metaDescription": "Baleríny modré s puntíky. Dásmské baleríny Glam, ve stylově modré barvě s bílými puntíky. Buďte hvězdou letošního léta."
+      },
+      "sizeId": null,
+      "giftVariantId": [],
+      "productNotify": [],
+      "surchargeParameters": [],
+      "similarProducts": null,
+      "relatedFiles": null,
+      "relatedVideos": null
+    },
+    "summary": {
+      "lowestPrice": {
+        "price": 948.0,
+        "priceWithoutVat": 783.47000000000003,
+        "standardPrice": 948.0,
+        "customerPrice": 948.0,
+        "customerPriceWithoutVat": 783.47000000000003,
+        "priceToStandardDiscountPercentage": 0.0
+      },
+      "image": {
+        "id": null,
+        "description": null,
+        "code": "detail",
+        "name": null,
+        "seoName": null,
+        "cdnName": null
+      },
+      "bestAvailability": {
+        "amount": 1.0,
+        "availabilityId": -1,
+        "isAmountAvailable": true,
+        "availabilityColor": "#009901",
+        "name": "Skladem",
+        "displayStockAmountByDeliveryPoints": true,
+        "frontendStockAmount": "1",
+        "stockAmount": 1.0,
+        "displayFrontendStockAmounts": true,
+        "deliveryDateTime": "2022-06-01T14:30:00+02:00",
+        "unavailabilityMessages": null,
+        "unavailabilityMessage": null
+      },
+      "isStockAvailable": true
+    },
+    "schemaOrgProduct": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Baleríny modré s puntíky",
+      "category": "Boty a ťapky",
+      "url": "https://fenix.myshoptet.com/boty-a-tapky/baleriny-modre-s-puntiky/",
+      "image": "/cms/img/common/missing_images/detail.png",
+      "description": "Dásmské baleríny Glam, ve stylově modré barvě s bílými puntíky. Buďte hvězdou letošního léta.",
+      "productID": "58",
+      "sku": "58/40",
+      "identifier": "d0190cd4-2d91-11e6-8a3b-0cc47a6c92bc",
+      "brand": {
+        "@context": "https://schema.org",
+        "@type": "Brand",
+        "name": "Paul Green",
+        "url": "https://fenix.myshoptet.com/znacka/paul-green/",
+        "description": null
+      }
+    },
+    "schemaOrgBreadcrumbList": {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@context": "https://schema.org",
+          "@type": "ListItem",
+          "item": {
+            "@id": "https://fenix.myshoptet.com/",
+            "name": "Úvodní stránka"
+          },
+          "position": 1
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "ListItem",
+          "item": {
+            "@id": "https://fenix.myshoptet.com/boty-a-tapky/",
+            "name": "Boty a ťapky"
+          },
+          "position": 2
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "ListItem",
+          "item": {
+            "@id": "https://fenix.myshoptet.com/boty-a-tapky/baleriny-modre-s-puntiky/",
+            "name": "Baleríny modré s puntíky"
+          },
+          "position": 3
+        }
+      ]
+    }
+  },
+  "errors": [],
+  "userMessages": []
+}
