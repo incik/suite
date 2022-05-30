@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNode } from "@craftjs/core";
+import { Label } from "../ui/form/Label";
+import { TextInput } from "../ui/form/TextInput";
 
 export const Image = ({ src, alt, width, height }) => {
   const {
@@ -11,20 +13,9 @@ export const Image = ({ src, alt, width, height }) => {
     dragged: state.events.dragged,
   }));
 
-  const [editable, setEditable] = useState(false);
-
-  useEffect(() => {
-    if (selected) {
-      return;
-    }
-
-    setEditable(false);
-  }, [selected]);
-
   return (
     <img
       ref={(ref) => connect(drag(ref))}
-      onClick={() => selected && setEditable(true)}
       src={src}
       alt={alt}
       width={width}
@@ -49,29 +40,26 @@ const ImageSettings = () => {
 
   return (
     <>
-      <label>
-        Source
-        <input
+      <Label label="Source">
+        <TextInput
           type="text"
           defaultValue={src}
           onChange={(e) => {
             setProp((props) => (props.src = e.target.value), 1000);
           }}
         />
-      </label>
-      <label>
-        Alt
-        <input
+      </Label>
+      <Label label="Alt">
+        <TextInput
           type="text"
           defaultValue={alt}
           onChange={(e) => {
             setProp((props) => (props.alt = e.target.value), 1000);
           }}
         />
-      </label>
-      <label>
-        Width
-        <input
+      </Label>
+      <Label label="Width">
+        <TextInput
           type="number"
           defaultValue={width}
           min="1"
@@ -79,10 +67,9 @@ const ImageSettings = () => {
             setProp((props) => (props.width = e.target.value), 1000);
           }}
         />
-      </label>
-      <label>
-        Height
-        <input
+      </Label>
+      <Label label="Height">
+        <TextInput
           type="number"
           defaultValue={height}
           min="1"
@@ -90,7 +77,7 @@ const ImageSettings = () => {
             setProp((props) => (props.height = e.target.value), 1000);
           }}
         />
-      </label>
+      </Label>
     </>
   );
 };

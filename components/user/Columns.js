@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 
-import { Element, useNode } from "@craftjs/core";
+import { Element, useNode, useEditor } from "@craftjs/core";
 import { Container } from "./Container";
 import { Label } from "../ui/form/Label";
 import { TextInput } from "../ui/form/TextInput";
 
 const EmptyColumn = () => {
   return (
-    <div className="p-4  italic text-gray-600 bg-teal-100">Empty column</div>
+    <div className="m-1 p-4 italic text-gray-600 bg-teal-100">Empty column</div>
   );
 };
 
@@ -24,10 +24,14 @@ export const ColumnContent = ({ children, className, ...props }) => {
 };
 
 export const Columns = ({ numberOfCols, gap, children }) => {
-  console.log("gap", gap);
+  const { enabled } = useEditor((state) => ({
+    enabled: state.options.enabled,
+  }));
   return (
     <Container
-      className={`flex flex-row outline-dashed outline-1 gap-${gap} outline-teal-300 hover:border-t-8 border-t-sky-500`}
+      className={`flex flex-row outline-dashed outline-1 gap-${gap} outline-teal-300 ${
+        enabled && "hover:border-t-8 border-t-sky-500"
+      } `}
     >
       {[...Array(numberOfCols).keys()].map((id) => (
         <Element

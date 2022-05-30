@@ -7,6 +7,10 @@ export const PanelSection = ({ title, children }) => {
   );
 };
 
-export const Panel = ({ children }) => {
-  return <div className="p-4 bg-gray-100 shadow-md rounded">{children}</div>;
+export const Panel = ({ className, children }) => {
+  return (
+    <div className={`p-4 bg-gray-100 shadow-md rounded ${className}`}>
+      {children}
+    </div>
+  );
 };

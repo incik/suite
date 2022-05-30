@@ -1,5 +1,5 @@
 import React from "react";
-import { useEditor } from "@craftjs/core";
+import { Element, useEditor } from "@craftjs/core";
 import {
   CubeIcon,
   PhotographIcon,
@@ -10,6 +10,9 @@ import {
   LinkIcon,
   SaveIcon,
   TemplateIcon,
+  ArrowCircleLeftIcon,
+  ArrowCircleRightIcon,
+  ArrowUpIcon,
 } from "@heroicons/react/outline";
 import { Container } from "../user/Container";
 import { Card } from "../user/Card";
@@ -45,7 +48,7 @@ const ToolboxButton = React.forwardRef(({ icon, text }, ref) => (
 ));
 
 export const Toolbox = () => {
-  const { connectors, query } = useEditor();
+  const { actions, connectors, query, canUndo, canRedo } = useEditor();
 
   return (
     <Panel>
@@ -76,7 +79,9 @@ export const Toolbox = () => {
           text="Image"
         />
         <ToolboxButton
-          ref={(ref) => connectors.create(ref, <Container />)}
+          ref={(ref) =>
+            connectors.create(ref, <Element is={Container} canvas />)
+          }
           icon={TemplateIcon}
           text="Container"
         />
@@ -109,16 +114,6 @@ export const Toolbox = () => {
           text="ProductCard"
         />
       </ToolboxSection>
-
-      <div className="text-center pt-4">
-        <button
-          onClick={() => console.log(query.serialize())}
-          className="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-2 focus:ring-green-300 font-medium rounded-lg text-xs px-2.5 py-1 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
-        >
-          <SaveIcon className="text-white w-4 h-4 inline-block mr-2" />
-          Export
-        </button>
-      </div>
     </Panel>
   );
 };
