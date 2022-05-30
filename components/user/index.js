@@ -9,3 +9,7 @@ export * from "./Rows";
 export * from "./Text";
 
 export * from "./Product/Container";
+export * from "./Product/Description";
+export * from "./Product/Image";
+export * from "./Product/Title";
+export * from "./Product/Rating";

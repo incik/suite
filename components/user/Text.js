@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNode } from "@craftjs/core";
 import ContentEditable from "react-contenteditable";
 
-export const Text = ({ text, fontSize }) => {
+export const Text = ({ text, fontSize, className, userEditable = true }) => {
   const {
     connectors: { connect, drag },
     selected,
@@ -19,27 +19,34 @@ export const Text = ({ text, fontSize }) => {
       return;
     }
 
-    setEditable(false);
+    if (userEditable) {
+      setEditable(false);
+    }
   }, [selected]);
 
   return (
     <div
       ref={(ref) => connect(drag(ref))}
-      onClick={() => selected && setEditable(true)}
+      onClick={() => selected && userEditable && setEditable(true)}
     >
-      <ContentEditable
-        html={text}
-        disabled={!editable}
-        onChange={(e) =>
-          setProp(
-            (props) =>
-              (props.text = e.target.value.replace(/<\/?[^>]+(>|$)/g, "")),
-            500
-          )
-        }
-        tagName="p"
-        style={{ fontSize: `${fontSize}px` }}
-      />
+      {userEditable ? (
+        <ContentEditable
+          html={text}
+          disabled={!editable}
+          onChange={(e) =>
+            setProp(
+              (props) =>
+                (props.text = e.target.value.replace(/<\/?[^>]+(>|$)/g, "")),
+              500
+            )
+          }
+          tagName="p"
+          style={{ fontSize: `${fontSize}px` }}
+          className={className}
+        />
+      ) : (
+        <p className={className}>{text}</p>
+      )}
     </div>
   );
 };

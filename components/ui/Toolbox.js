@@ -25,6 +25,9 @@ import { Link } from "../user/Link";
 import { Image } from "../user/Image";
 import { Panel, PanelSection } from "./Panel";
 import { ProductContainer } from "../user/Product/Container";
+import { ProductDescription, ProductTitle } from "../user";
+import { ProductImage } from "../user/Product/Image";
+import { ProductRating } from "../user/Product/Rating";
 
 const ToolboxSection = ({ title, children }) => (
   <PanelSection title={title}>
@@ -125,24 +128,22 @@ export const Toolbox = () => {
           text="Product Container"
         />
         <ToolboxButton
-          ref={(ref) => connectors.create(ref, <Text text="Product Title" />)}
+          ref={(ref) => connectors.create(ref, <ProductTitle />)}
           icon={CubeIcon}
           text="Product Title"
         />
         <ToolboxButton
-          ref={(ref) =>
-            connectors.create(ref, <Text text="Product Description" />)
-          }
+          ref={(ref) => connectors.create(ref, <ProductDescription />)}
           icon={CubeIcon}
           text="Product Description"
         />
         <ToolboxButton
-          ref={(ref) => connectors.create(ref, <Text text="Product Image" />)}
+          ref={(ref) => connectors.create(ref, <ProductImage />)}
           icon={CubeIcon}
           text="Product Image"
         />
         <ToolboxButton
-          ref={(ref) => connectors.create(ref, <Text text="Product Rating" />)}
+          ref={(ref) => connectors.create(ref, <ProductRating />)}
           icon={CubeIcon}
           text="Product Rating"
         />
