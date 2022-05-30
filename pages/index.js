@@ -2,17 +2,7 @@ import { useState } from "react";
 import { Editor, Element, Frame, useEditor } from "@craftjs/core";
 import { Layers } from "@craftjs/layers";
 
-import { Button } from "../components/user/Button";
-import { Card, CardBottom, CardTop } from "../components/user/Card";
-import { Columns, ColumnContent } from "../components/user/Columns";
-import { Rows, RowContent } from "../components/user/Rows";
-import { Text } from "../components/user/Text";
-import { Link } from "../components/user/Link";
-import { ProductCard } from "../components/user/ProductCard";
-import { Container } from "../components/user/Container";
-import { Image } from "../components/user/Image";
-
-// import * as UserComponents from "../components/user";
+import * as UserComponents from "../components/user";
 
 import { Toolbox } from "../components/ui/Toolbox";
 import { Panel } from "../components/ui/Panel";
@@ -32,24 +22,7 @@ export default function Home() {
         </div>
       </div>
       <div className="grid grid-cols-12 gap-3 h-full p-1">
-        <Editor
-          // resolver={UserComponents}
-          resolver={{
-            Button,
-            Rows,
-            Text,
-            Container,
-            ProductCard,
-            Card,
-            CardTop,
-            CardBottom,
-            RowContent,
-            Columns,
-            ColumnContent,
-            Link,
-            Image,
-          }}
-        >
+        <Editor resolver={UserComponents}>
           <div className="col-span-2">
             <Toolbox />
           </div>
@@ -57,8 +30,7 @@ export default function Home() {
             <TopBar />
             <Panel>
               <Frame>
-                {/* <Element is={UserComponents.Container} id="root" canvas /> */}
-                <Element is={Container} id="root" canvas />
+                <Element is={UserComponents.Container} id="root" canvas />
               </Frame>
             </Panel>
           </div>
