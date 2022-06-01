@@ -11,7 +11,7 @@ const EmptyColumn = () => {
   );
 };
 
-export const ColumnContent = ({ children, className, ...props }) => {
+export const Column = ({ children, className, ...props }) => {
   const {
     connectors: { connect },
   } = useNode();
@@ -35,7 +35,7 @@ export const Columns = ({ numberOfCols, gap, children }) => {
     >
       {[...Array(numberOfCols).keys()].map((id) => (
         <Element
-          is={ColumnContent}
+          is={Column}
           id={`column-${id}`}
           canvas
           className={`col-span-${Math.floor(10 / numberOfCols)}`}

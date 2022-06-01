@@ -3,7 +3,7 @@ import { Container } from "./Container";
 import { Label } from "../ui/form/Label";
 import { TextInput } from "../ui/form/TextInput";
 
-export const RowContent = ({ children, ...props }) => {
+export const Row = ({ children, ...props }) => {
   const {
     connectors: { connect },
   } = useNode();
@@ -32,7 +32,7 @@ export const Rows = ({ numberOfRows = 2, gap, children }) => {
       }`}
     >
       {[...Array(numberOfRows).keys()].map((id) => (
-        <Element is={RowContent} id={`row-${id}`} canvas />
+        <Element is={Row} id={`row-${id}`} canvas />
       ))}
     </Container>
   );

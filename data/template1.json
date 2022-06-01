@@ -21,10 +21,10 @@
     "linkedNodes": { "row-0": "2MXqRexgdw", "row-1": "2LLBnrIRb1" }
   },
   "2MXqRexgdw": {
-    "type": { "resolvedName": "RowContent" },
+    "type": { "resolvedName": "Row" },
     "isCanvas": true,
     "props": {},
-    "displayName": "RowContent",
+    "displayName": "Row",
     "custom": {},
     "parent": "FriNhtROwy",
     "hidden": false,
@@ -32,10 +32,10 @@
     "linkedNodes": {}
   },
   "2LLBnrIRb1": {
-    "type": { "resolvedName": "RowContent" },
+    "type": { "resolvedName": "Row" },
     "isCanvas": true,
     "props": {},
-    "displayName": "RowContent",
+    "displayName": "Row",
     "custom": {},
     "parent": "FriNhtROwy",
     "hidden": false,
@@ -54,10 +54,10 @@
     "linkedNodes": { "column-0": "cXb58PUPZX", "column-1": "p1vaPsGsgv" }
   },
   "cXb58PUPZX": {
-    "type": { "resolvedName": "ColumnContent" },
+    "type": { "resolvedName": "Column" },
     "isCanvas": true,
     "props": { "className": "col-span-5" },
-    "displayName": "ColumnContent",
+    "displayName": "Column",
     "custom": {},
     "parent": "TLkCbXivFR",
     "hidden": false,
@@ -65,10 +65,10 @@
     "linkedNodes": {}
   },
   "p1vaPsGsgv": {
-    "type": { "resolvedName": "ColumnContent" },
+    "type": { "resolvedName": "Column" },
     "isCanvas": true,
     "props": { "className": "col-span-5" },
-    "displayName": "ColumnContent",
+    "displayName": "Column",
     "custom": {},
     "parent": "TLkCbXivFR",
     "hidden": false,
@@ -87,10 +87,10 @@
     "linkedNodes": { "row-0": "PIbRFzvgc6", "row-1": "LX5cvMvAn2" }
   },
   "PIbRFzvgc6": {
-    "type": { "resolvedName": "RowContent" },
+    "type": { "resolvedName": "Row" },
     "isCanvas": true,
     "props": {},
-    "displayName": "RowContent",
+    "displayName": "Row",
     "custom": {},
     "parent": "GH7aWUT4J0",
     "hidden": false,
@@ -98,10 +98,10 @@
     "linkedNodes": {}
   },
   "LX5cvMvAn2": {
-    "type": { "resolvedName": "RowContent" },
+    "type": { "resolvedName": "Row" },
     "isCanvas": true,
     "props": {},
-    "displayName": "RowContent",
+    "displayName": "Row",
     "custom": {},
     "parent": "GH7aWUT4J0",
     "hidden": false,
@@ -124,10 +124,10 @@
     }
   },
   "JdKlpVbdbh": {
-    "type": { "resolvedName": "ColumnContent" },
+    "type": { "resolvedName": "Column" },
     "isCanvas": true,
     "props": { "className": "col-span-5" },
-    "displayName": "ColumnContent",
+    "displayName": "Column",
     "custom": {},
     "parent": "s8b5lEg_m8",
     "hidden": false,
@@ -135,10 +135,10 @@
     "linkedNodes": {}
   },
   "-0SHNW24ef": {
-    "type": { "resolvedName": "ColumnContent" },
+    "type": { "resolvedName": "Column" },
     "isCanvas": true,
     "props": { "className": "col-span-5" },
-    "displayName": "ColumnContent",
+    "displayName": "Column",
     "custom": {},
     "parent": "s8b5lEg_m8",
     "hidden": false,
@@ -146,10 +146,10 @@
     "linkedNodes": {}
   },
   "YOw0NZau33": {
-    "type": { "resolvedName": "ColumnContent" },
+    "type": { "resolvedName": "Column" },
     "isCanvas": true,
     "props": { "className": "col-span-3" },
-    "displayName": "ColumnContent",
+    "displayName": "Column",
     "custom": {},
     "parent": "s8b5lEg_m8",
     "hidden": false,
@@ -173,10 +173,10 @@
     }
   },
   "Eus6aXutT7": {
-    "type": { "resolvedName": "RowContent" },
+    "type": { "resolvedName": "Row" },
     "isCanvas": true,
     "props": {},
-    "displayName": "RowContent",
+    "displayName": "Row",
     "custom": {},
     "parent": "TarCvRPPUP",
     "hidden": false,
@@ -184,10 +184,10 @@
     "linkedNodes": {}
   },
   "-a8BQ-p4XJ": {
-    "type": { "resolvedName": "RowContent" },
+    "type": { "resolvedName": "Row" },
     "isCanvas": true,
     "props": {},
-    "displayName": "RowContent",
+    "displayName": "Row",
     "custom": {},
     "parent": "TarCvRPPUP",
     "hidden": false,
@@ -195,10 +195,10 @@
     "linkedNodes": {}
   },
   "m1ZyIzCDHF": {
-    "type": { "resolvedName": "RowContent" },
+    "type": { "resolvedName": "Row" },
     "isCanvas": true,
     "props": {},
-    "displayName": "RowContent",
+    "displayName": "Row",
     "custom": {},
     "parent": "TarCvRPPUP",
     "hidden": false,
@@ -206,10 +206,10 @@
     "linkedNodes": {}
   },
   "tspN0q9v97": {
-    "type": { "resolvedName": "RowContent" },
+    "type": { "resolvedName": "Row" },
     "isCanvas": true,
     "props": {},
-    "displayName": "RowContent",
+    "displayName": "Row",
     "custom": {},
     "parent": "TarCvRPPUP",
     "hidden": false,
@@ -228,10 +228,10 @@
     "linkedNodes": { "column-0": "EqvHyR6wf-", "column-1": "su8t_ev31A" }
   },
   "EqvHyR6wf-": {
-    "type": { "resolvedName": "ColumnContent" },
+    "type": { "resolvedName": "Column" },
     "isCanvas": true,
     "props": { "className": "col-span-5" },
-    "displayName": "ColumnContent",
+    "displayName": "Column",
     "custom": {},
     "parent": "CmXX5WJnOA",
     "hidden": false,
@@ -239,10 +239,10 @@
     "linkedNodes": {}
   },
   "su8t_ev31A": {
-    "type": { "resolvedName": "ColumnContent" },
+    "type": { "resolvedName": "Column" },
     "isCanvas": true,
     "props": { "className": "col-span-5" },
-    "displayName": "ColumnContent",
+    "displayName": "Column",
     "custom": {},
     "parent": "CmXX5WJnOA",
     "hidden": false,
