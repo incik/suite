@@ -33,14 +33,15 @@ export const Columns = ({ numberOfCols, gap, children }) => {
         enabled && "hover:border-t-8 border-t-sky-500"
       } `}
     >
-      {[...Array(numberOfCols).keys()].map((id) => (
-        <Element
-          is={Column}
-          id={`column-${id}`}
-          canvas
-          className={`col-span-${Math.floor(10 / numberOfCols)}`}
-        />
-      ))}
+      {children ??
+        [...Array(numberOfCols).keys()].map((id) => (
+          <Element
+            is={Column}
+            id={`column-${id}`}
+            canvas
+            className={`col-span-${Math.floor(10 / numberOfCols)}`}
+          />
+        ))}
     </Container>
   );
 };

@@ -31,9 +31,10 @@ export const Rows = ({ numberOfRows = 2, gap, children }) => {
         enabled && "hover:border-t-8 border-t-sky-500"
       }`}
     >
-      {[...Array(numberOfRows).keys()].map((id) => (
-        <Element is={Row} id={`row-${id}`} canvas />
-      ))}
+      {children ??
+        [...Array(numberOfRows).keys()].map((id) => (
+          <Element is={Row} id={`row-${id}`} canvas />
+        ))}
     </Container>
   );
 };

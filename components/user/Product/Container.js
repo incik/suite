@@ -3,7 +3,7 @@ import { ProductContext } from "./ProductContext";
 
 const productData = require("../../../data/product.json");
 
-export const ProductContainerPlaceholder = ({ children, ...props }) => {
+export const ProductContainerContent = ({ children, ...props }) => {
   const {
     connectors: { connect },
   } = useNode();
@@ -29,7 +29,7 @@ export const ProductContainerPlaceholder = ({ children, ...props }) => {
   );
 };
 
-export const ProductContainer = () => {
+export const ProductContainer = ({ children }) => {
   const {
     connectors: { connect, drag },
   } = useNode();
@@ -37,11 +37,13 @@ export const ProductContainer = () => {
   return (
     <div ref={(ref) => connect(drag(ref))}>
       <ProductContext.Provider value={productData}>
-        <Element
-          is={ProductContainerPlaceholder}
-          id="product-container-placeholder"
-          canvas
-        />
+        {children ?? (
+          <Element
+            is={ProductContainerContent}
+            id="product-container-placeholder"
+            canvas
+          />
+        )}
       </ProductContext.Provider>
     </div>
   );
