@@ -3,11 +3,18 @@ import { useEditor } from "@craftjs/core";
 import { RefreshIcon } from "@heroicons/react/outline";
 import { Panel } from "./Panel";
 
-const transform = (node, getNode) => {
+const __transformChildren = (children, getNode, level) =>
+  children
+    .map((child) => transformToJSX(getNode(child).get(), getNode, level + 1))
+    .join("\n");
+
+const transformToJSX = (node, getNode, level = 1) => {
   if (!node) return null;
 
   const props = Object.keys(node.data.props)
-    .map((prop) => `${prop}="${node.data.props[prop]}"`)
+    .map((prop) =>
+      prop !== "children" ? `${prop}="${node.data.props[prop]}"` : ""
+    )
     .join(" ");
 
   const linkedNodes = Object.keys(node.data.linkedNodes).map(
@@ -16,11 +23,18 @@ const transform = (node, getNode) => {
 
   const children = node.data.nodes.length > 0 ? node.data.nodes : linkedNodes;
 
-  return `<${node.data.name} ${props}${
+  const tabs =
+    level > 1
+      ? Array.from(Array(level - 1).keys())
+          .map(() => "  ")
+          .join("")
+      : "";
+
+  return `${tabs}<${node.data.name}${props ? " " + props : ""}${
     children.length > 0
-      ? `>${children
-          .map((child) => transform(getNode(child).get(), getNode))
-          .join("\n")}</${node.data.name}>`
+      ? `>\n${__transformChildren(children, getNode, level + 1)}\n${tabs}</${
+          node.data.name
+        }>`
       : " />"
   }`;
 };
@@ -48,7 +62,7 @@ export const JsxOutput = () => {
         </button>
       </div>
       <div className="mt-4 p-4 border rounded bg-white">
-        {transform(q, query.node)}
+        <pre>{transformToJSX(q, query.node)}</pre>
       </div>
       <div className="mt-4 p-4 border rounded bg-gray-200 text-gray-400">
         {output}
