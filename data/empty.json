@@ -1,0 +1,12 @@
+{
+  "ROOT": {
+    "type": { "resolvedName": "Container" },
+    "isCanvas": true,
+    "props": { "id": "root" },
+    "displayName": "Container",
+    "custom": {},
+    "hidden": false,
+    "nodes": [],
+    "linkedNodes": {}
+  }
+}

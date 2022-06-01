@@ -5,12 +5,14 @@ import {
   ArrowUpIcon,
   SaveIcon,
   CheckIcon,
+  CubeTransparentIcon,
   PencilIcon,
 } from "@heroicons/react/outline";
 import { useState } from "react";
 import { Panel } from "./Panel";
 import { Popup } from "./Popup";
 
+const empty = require("../../data/empty.json");
 const template1 = require("../../data/template1.json");
 const template2 = require("../../data/template2.json");
 
@@ -66,6 +68,13 @@ export const TopBar = () => {
   return (
     <Panel className="mb-2 pt-2 pb-0 flex justify-between">
       <div className="">
+        <TopBarButton
+          onClick={() => actions.deserialize(empty)}
+          className="bg-gray-200 text-gray-900"
+        >
+          <CubeTransparentIcon className="w-5 h-5 inline-block mr-2" />
+          New
+        </TopBarButton>
         <TopBarButton
           disabled={!canUndo}
           onClick={() => actions.history.undo()}
