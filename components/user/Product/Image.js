@@ -73,7 +73,7 @@ ProductImage.craft = {
     canDrop: (dropTarget, _, helper) => {
       const targetNode = helper(dropTarget.id);
       const hasAncestorContainer = targetNode
-        .ancestors()
+        .ancestors(true)
         .map((nodeId) => helper(nodeId).get().data.type === ProductContainer);
 
       return hasAncestorContainer.reduce((a, b) => a || b, false);
