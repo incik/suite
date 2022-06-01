@@ -12,6 +12,7 @@ import { Panel } from "./Panel";
 import { Popup } from "./Popup";
 
 const template1 = require("../../data/template1.json");
+const template2 = require("../../data/template2.json");
 
 const EditButton = ({}) => {
   const { actions, query, enabled } = useEditor((state) => ({
@@ -63,8 +64,8 @@ export const TopBar = () => {
     canRedo: query.history.canRedo(),
   }));
   return (
-    <Panel className="mb-2 pt-2 pb-0 flex">
-      <div className="w-1/2 fill">
+    <Panel className="mb-2 pt-2 pb-0 flex justify-between">
+      <div className="">
         <TopBarButton
           disabled={!canUndo}
           onClick={() => actions.history.undo()}
@@ -100,8 +101,16 @@ export const TopBar = () => {
           <ArrowUpIcon className="w-4 h-4 inline-block mr-2" />
           Load template
         </TopBarButton>
+
+        <TopBarButton
+          onClick={() => actions.deserialize(template2)}
+          className="bg-amber-400 text-gray-900"
+        >
+          <ArrowUpIcon className="w-4 h-4 inline-block mr-2" />
+          Load template 2
+        </TopBarButton>
       </div>
-      <div className="w-1/2 fill text-right">
+      <div className="text-right">
         <EditButton />
       </div>
 

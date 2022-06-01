@@ -1,0 +1,116 @@
+{
+  "ROOT": {
+    "type": { "resolvedName": "Container" },
+    "isCanvas": true,
+    "props": { "id": "root" },
+    "displayName": "Container",
+    "custom": {},
+    "hidden": false,
+    "nodes": ["_DXAfXhBqf"],
+    "linkedNodes": {}
+  },
+  "_DXAfXhBqf": {
+    "type": { "resolvedName": "Rows" },
+    "isCanvas": false,
+    "props": { "numberOfRows": 2, "gap": 0 },
+    "displayName": "Rows",
+    "custom": {},
+    "parent": "ROOT",
+    "hidden": false,
+    "nodes": [],
+    "linkedNodes": { "row-0": "KJSYMAyka5", "row-1": "rLbhYfT4Ul" }
+  },
+  "KJSYMAyka5": {
+    "type": { "resolvedName": "RowContent" },
+    "isCanvas": true,
+    "props": {},
+    "displayName": "RowContent",
+    "custom": {},
+    "parent": "_DXAfXhBqf",
+    "hidden": false,
+    "nodes": ["Bw6eR2nNXX"],
+    "linkedNodes": {}
+  },
+  "rLbhYfT4Ul": {
+    "type": { "resolvedName": "RowContent" },
+    "isCanvas": true,
+    "props": {},
+    "displayName": "RowContent",
+    "custom": {},
+    "parent": "_DXAfXhBqf",
+    "hidden": false,
+    "nodes": ["KtQUpoeO9u"],
+    "linkedNodes": {}
+  },
+  "KtQUpoeO9u": {
+    "type": { "resolvedName": "Columns" },
+    "isCanvas": false,
+    "props": { "numberOfCols": 2, "gap": 0 },
+    "displayName": "Columns",
+    "custom": {},
+    "parent": "rLbhYfT4Ul",
+    "hidden": false,
+    "nodes": [],
+    "linkedNodes": { "column-0": "V7f6n_lio_", "column-1": "2haiwH7Bp1" }
+  },
+  "V7f6n_lio_": {
+    "type": { "resolvedName": "ColumnContent" },
+    "isCanvas": true,
+    "props": { "className": "col-span-5" },
+    "displayName": "ColumnContent",
+    "custom": {},
+    "parent": "KtQUpoeO9u",
+    "hidden": false,
+    "nodes": ["QZqF4fQxom"],
+    "linkedNodes": {}
+  },
+  "2haiwH7Bp1": {
+    "type": { "resolvedName": "ColumnContent" },
+    "isCanvas": true,
+    "props": { "className": "col-span-5" },
+    "displayName": "ColumnContent",
+    "custom": {},
+    "parent": "KtQUpoeO9u",
+    "hidden": false,
+    "nodes": ["tmoNX8WDVR"],
+    "linkedNodes": {}
+  },
+  "Bw6eR2nNXX": {
+    "type": { "resolvedName": "Text" },
+    "isCanvas": false,
+    "props": { "text": "Pokusíto", "fontSize": "36" },
+    "displayName": "Text",
+    "custom": {},
+    "parent": "KJSYMAyka5",
+    "hidden": false,
+    "nodes": [],
+    "linkedNodes": {}
+  },
+  "QZqF4fQxom": {
+    "type": { "resolvedName": "Image" },
+    "isCanvas": false,
+    "props": {
+      "src": "http://placekitten.com/480/320",
+      "alt": "New image",
+      "width": 480,
+      "height": 320
+    },
+    "displayName": "Image",
+    "custom": {},
+    "parent": "V7f6n_lio_",
+    "hidden": false,
+    "nodes": [],
+    "linkedNodes": {}
+  },
+  "tmoNX8WDVR": {
+    "type": { "resolvedName": "Text" },
+    "isCanvas": false,
+    "props": { "text": "Lorem ipsum dolor sit amet", "fontSize": "15" },
+    "displayName": "Text",
+    "custom": {},
+    "parent": "2haiwH7Bp1",
+    "hidden": false,
+    "nodes": [],
+    "linkedNodes": {}
+  }
+}

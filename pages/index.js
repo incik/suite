@@ -8,6 +8,7 @@ import { Toolbox } from "../components/ui/Toolbox";
 import { Panel } from "../components/ui/Panel";
 import { SettingsPanel } from "../components/ui/SettingsPanel";
 import { TopBar } from "../components/ui/TopBar";
+import { JsxOutput } from "../components/ui/JsxOutput";
 
 export default function Home() {
   return (
@@ -41,6 +42,9 @@ export default function Home() {
             <div className="grow">
               <Layers />
             </div>
+          </div>
+          <div className="col-span-12">
+            <JsxOutput />
           </div>
         </Editor>
       </div>
