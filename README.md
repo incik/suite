@@ -1,34 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SUITE
 
-## Getting Started
+_"Shoptet's Ultimate Interactive Template Editor"_
 
-First, run the development server:
+This is a prototype of the capabilities of [Craft.js](https://github.com/prevwong/craft.js). It is a library for creating custom webpage editors.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Demonstrated functionality:
+- Custom components
+  - custom setting forms for changing the props of the components
+  - validation of component composition
+    - ProductTitle, ProductDescription, and other "Product" components have to be placed into "ProductContainer")
+- enabling/disabling the editor
+- rudimentary "undo/redo" functionality
+- loading previously defined templates from JSON schema
+- conversion of the JSON schema to JSX
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Howtos:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+These instructions should help anyone trying to play the project. I write them because Craft's documentation is a bit inconsistent, plus this project has already some "nice-to-have" shortcuts built into it.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### How to add a component
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+All the components that user can "mess with" are in `/components/user`. There's an `index.js` file that exports content of all the individual components. You should add your component into this listing in order to avoid the need to explicilty list the component in the `resolvers` object of the `Editor` component.
 
-## Learn More
+1. 
 
-To learn more about Next.js, take a look at the following resources:
+### How to compose component
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**Component should be also usable as normal React component**. Keep that in mind and don't forget to output children!
